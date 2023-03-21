@@ -59,6 +59,15 @@ public class GreetingResource {
         return responseWithStatus.build();
     }
 
+    /**
+     * curl --location 'localhost:8080/fruits/create' \
+     * --header 'Content-Type: application/json' \
+     * --data '{
+     *     "name": "tuna",
+     *     "description": "delicious fresh and green fruit"
+     * }'
+     *
+     * */
 
     @Path("/create")
     @POST
